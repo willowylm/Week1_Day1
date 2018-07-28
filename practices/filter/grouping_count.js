@@ -3,11 +3,16 @@
 function grouping_count(collection) {
 
   //在这里写入代码
-// var map={};
-// map.array.forEach(element => {
-//   if(element)
-// });
 
+  let result = {}
+  collection.forEach(element => {
+    if(result[element] === undefined) {
+      result[element] = 1;
+    } else {
+      result[element]++;
+    }
+  });
+return result;
 
 }
 
